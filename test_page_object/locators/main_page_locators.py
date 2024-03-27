@@ -7,7 +7,7 @@ class MainPageLocators:
     #локаторы ответов
     ANSWER_LOCATORS = By.XPATH, '//div[@id="accordion__panel-{}"]'
     #локатор кнопки заказать на чердаке страницы
-    UPSTAIRS_ORDER_BUTTON = By.XPATH, '/html/body/div[1]/div/div/div[1]/div[2]/button[1]'
+    UPSTAIRS_ORDER_BUTTON = By.XPATH, "//button[@class='Button_Button__ra12g' and contains(text(), 'Заказать')]"
     #локатор кнопки куки
     COOKIE = By.XPATH, '//button[@id="rcc-confirm-button"]'
     #локатор кнопки самоката в верху
@@ -17,4 +17,4 @@ class MainPageLocators:
     # локатор кнопки заказа в верху
     ORDER_BUTTON_UP_LOCATORS = By.XPATH, "//button[@class='Button_Button__ra12g' and text()='Заказать']"
     #текст Самокат на пару дней
-    TEXT_SCOOTER_MAIN_PAGE = By.XPATH, "//div[@class='Home_Header__iJKdX' and not(ancestor::div[@class='Home_Header__iJKdX'])]"
+    TEXT_SCOOTER_MAIN_PAGE = By.XPATH, "//div[@class='Home_Header__iJKdX']"

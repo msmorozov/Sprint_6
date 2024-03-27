@@ -9,7 +9,7 @@ class Answers:
     ANSWER_Q_8 = 'Да, обязательно. Всем самокатов! И Москве, и Московской области.'
 
 class RedirectUrl_From_MainPage:
-    Dzen_Url = 'dzen.ru'
+    Url_Dzen = 'https://dzen.ru/?yredirect=true'
     Scooter_Url = 'qa-scooter'
     Order_Url = 'https://qa-scooter.praktikum-services.ru/order'
 

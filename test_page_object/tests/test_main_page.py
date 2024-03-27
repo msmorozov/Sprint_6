@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from data import Answers
@@ -6,7 +7,7 @@ from test_page_object.pages.main_page import MainPage
 
 
 class TestMainPage:
-
+    @allure.title('Тест выбора вопроса и проверка правильности ответа')
     @pytest.mark.parametrize(
         "q_num,expected_result",
         [
@@ -22,7 +23,7 @@ class TestMainPage:
     )
     def test_questions(self, driver, q_num, expected_result):
         main_page = MainPage(driver)
-        main_page.click_on_element(MainPageLocators.COOKIE)
+        main_page.cookie_close()
         result = main_page.click_to_question_and_get_answer_text(
             MainPageLocators.QUESTION_LOCATORS,
             MainPageLocators.ANSWER_LOCATORS,
